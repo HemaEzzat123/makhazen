@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAKHAZIN.APIs", "MAKHAZIN.APIs\MAKHAZIN.APIs.csproj", "{6D9C28DC-3918-4052-89D5-13626A0961D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAKHAZIN.Core", "MAKHAZIN.Core\MAKHAZIN.Core.csproj", "{EC9DBE01-26B6-48EB-BC2B-29B00876A1C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAKHAZIN.Repository", "MAKHAZIN.Repository\MAKHAZIN.Repository.csproj", "{CB028C2E-3FA6-45AA-9D63-1B1B8BD96EC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAKHAZIN.Services", "MAKHAZIN.Services\MAKHAZIN.Services.csproj", "{39CE5E15-2218-421B-9F8C-D0193B138847}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6D9C28DC-3918-4052-89D5-13626A0961D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D9C28DC-3918-4052-89D5-13626A0961D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D9C28DC-3918-4052-89D5-13626A0961D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D9C28DC-3918-4052-89D5-13626A0961D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC9DBE01-26B6-48EB-BC2B-29B00876A1C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC9DBE01-26B6-48EB-BC2B-29B00876A1C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC9DBE01-26B6-48EB-BC2B-29B00876A1C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC9DBE01-26B6-48EB-BC2B-29B00876A1C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB028C2E-3FA6-45AA-9D63-1B1B8BD96EC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB028C2E-3FA6-45AA-9D63-1B1B8BD96EC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB028C2E-3FA6-45AA-9D63-1B1B8BD96EC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB028C2E-3FA6-45AA-9D63-1B1B8BD96EC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39CE5E15-2218-421B-9F8C-D0193B138847}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39CE5E15-2218-421B-9F8C-D0193B138847}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39CE5E15-2218-421B-9F8C-D0193B138847}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39CE5E15-2218-421B-9F8C-D0193B138847}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
