@@ -1,0 +1,8 @@
+
+## Build folders (Visual Studio / .NET)
+bin/
+obj/
+out/
+.vs/
+## Dotnet secrets and local configs
+appsettings.Development.json

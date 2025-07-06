@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Backend\\MAKHAZIN\\MAKHAZIN.Solution\\MAKHAZIN.APIs\\MAKHAZIN.APIs.csproj": {}
+    "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.APIs\\MAKHAZIN.APIs.csproj": {}
   },
   "projects": {
-    "D:\\Backend\\MAKHAZIN\\MAKHAZIN.Solution\\MAKHAZIN.APIs\\MAKHAZIN.APIs.csproj": {
+    "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.APIs\\MAKHAZIN.APIs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Backend\\MAKHAZIN\\MAKHAZIN.Solution\\MAKHAZIN.APIs\\MAKHAZIN.APIs.csproj",
+        "projectUniqueName": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.APIs\\MAKHAZIN.APIs.csproj",
         "projectName": "MAKHAZIN.APIs",
-        "projectPath": "D:\\Backend\\MAKHAZIN\\MAKHAZIN.Solution\\MAKHAZIN.APIs\\MAKHAZIN.APIs.csproj",
+        "projectPath": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.APIs\\MAKHAZIN.APIs.csproj",
         "packagesPath": "C:\\Users\\ae386\\.nuget\\packages\\",
-        "outputPath": "D:\\Backend\\MAKHAZIN\\MAKHAZIN.Solution\\MAKHAZIN.APIs\\obj\\",
+        "outputPath": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.APIs\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Backend\\MAKHAZIN\\MAKHAZIN.Solution\\MAKHAZIN.Repository\\MAKHAZIN.Repository.csproj": {
-                "projectPath": "D:\\Backend\\MAKHAZIN\\MAKHAZIN.Solution\\MAKHAZIN.Repository\\MAKHAZIN.Repository.csproj"
+              "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Repository\\MAKHAZIN.Repository.csproj": {
+                "projectPath": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Repository\\MAKHAZIN.Repository.csproj"
               }
             }
           }
@@ -54,6 +54,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[8.0.17, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
@@ -82,14 +86,14 @@
         }
       }
     },
-    "D:\\Backend\\MAKHAZIN\\MAKHAZIN.Solution\\MAKHAZIN.Core\\MAKHAZIN.Core.csproj": {
+    "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\MAKHAZIN.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Backend\\MAKHAZIN\\MAKHAZIN.Solution\\MAKHAZIN.Core\\MAKHAZIN.Core.csproj",
+        "projectUniqueName": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\MAKHAZIN.Core.csproj",
         "projectName": "MAKHAZIN.Core",
-        "projectPath": "D:\\Backend\\MAKHAZIN\\MAKHAZIN.Solution\\MAKHAZIN.Core\\MAKHAZIN.Core.csproj",
+        "projectPath": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\MAKHAZIN.Core.csproj",
         "packagesPath": "C:\\Users\\ae386\\.nuget\\packages\\",
-        "outputPath": "D:\\Backend\\MAKHAZIN\\MAKHAZIN.Solution\\MAKHAZIN.Core\\obj\\",
+        "outputPath": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -147,14 +151,14 @@
         }
       }
     },
-    "D:\\Backend\\MAKHAZIN\\MAKHAZIN.Solution\\MAKHAZIN.Repository\\MAKHAZIN.Repository.csproj": {
+    "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Repository\\MAKHAZIN.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Backend\\MAKHAZIN\\MAKHAZIN.Solution\\MAKHAZIN.Repository\\MAKHAZIN.Repository.csproj",
+        "projectUniqueName": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Repository\\MAKHAZIN.Repository.csproj",
         "projectName": "MAKHAZIN.Repository",
-        "projectPath": "D:\\Backend\\MAKHAZIN\\MAKHAZIN.Solution\\MAKHAZIN.Repository\\MAKHAZIN.Repository.csproj",
+        "projectPath": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Repository\\MAKHAZIN.Repository.csproj",
         "packagesPath": "C:\\Users\\ae386\\.nuget\\packages\\",
-        "outputPath": "D:\\Backend\\MAKHAZIN\\MAKHAZIN.Solution\\MAKHAZIN.Repository\\obj\\",
+        "outputPath": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -175,8 +179,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Backend\\MAKHAZIN\\MAKHAZIN.Solution\\MAKHAZIN.Core\\MAKHAZIN.Core.csproj": {
-                "projectPath": "D:\\Backend\\MAKHAZIN\\MAKHAZIN.Solution\\MAKHAZIN.Core\\MAKHAZIN.Core.csproj"
+              "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\MAKHAZIN.Core.csproj": {
+                "projectPath": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\MAKHAZIN.Core.csproj"
               }
             }
           }

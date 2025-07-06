@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Backend\\MAKHAZIN\\MAKHAZIN.Solution\\MAKHAZIN.Core\\MAKHAZIN.Core.csproj",
+      "projectUniqueName": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\MAKHAZIN.Core.csproj",
       "projectName": "MAKHAZIN.Core",
-      "projectPath": "D:\\Backend\\MAKHAZIN\\MAKHAZIN.Solution\\MAKHAZIN.Core\\MAKHAZIN.Core.csproj",
+      "projectPath": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\MAKHAZIN.Core.csproj",
       "packagesPath": "C:\\Users\\ae386\\.nuget\\packages\\",
-      "outputPath": "D:\\Backend\\MAKHAZIN\\MAKHAZIN.Solution\\MAKHAZIN.Core\\obj\\",
+      "outputPath": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
