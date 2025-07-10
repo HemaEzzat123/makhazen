@@ -22,7 +22,10 @@ namespace MAKHAZIN.APIs
             {
                 options.UseSqlServer(webApplicationBuilder.Configuration.GetConnectionString("DefaultConnection"));
             });
-
+            webApplicationBuilder.Services.AddMediatR(cfg =>
+            {
+                cfg.RegisterServicesFromAssemblyContaining<MAKHAZINDbContext>();
+            });
             webApplicationBuilder.Services.AddApplicationServices();
             #endregion
 

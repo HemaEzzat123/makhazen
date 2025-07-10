@@ -3,6 +3,46 @@
   "WorkspaceRootPath": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EC9DBE01-26B6-48EB-BC2B-29B00876A1C7}|MAKHAZIN.Core\\MAKHAZIN.Core.csproj|d:\\backend\\makhazin\\makhazen\\makhazin.solution\\makhazin.core\\entities\\reportrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC9DBE01-26B6-48EB-BC2B-29B00876A1C7}|MAKHAZIN.Core\\MAKHAZIN.Core.csproj|solutionrelative:makhazin.core\\entities\\reportrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC9DBE01-26B6-48EB-BC2B-29B00876A1C7}|MAKHAZIN.Core\\MAKHAZIN.Core.csproj|d:\\backend\\makhazin\\makhazen\\makhazin.solution\\makhazin.core\\entities\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC9DBE01-26B6-48EB-BC2B-29B00876A1C7}|MAKHAZIN.Core\\MAKHAZIN.Core.csproj|solutionrelative:makhazin.core\\entities\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC9DBE01-26B6-48EB-BC2B-29B00876A1C7}|MAKHAZIN.Core\\MAKHAZIN.Core.csproj|d:\\backend\\makhazin\\makhazen\\makhazin.solution\\makhazin.core\\entities\\rating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC9DBE01-26B6-48EB-BC2B-29B00876A1C7}|MAKHAZIN.Core\\MAKHAZIN.Core.csproj|solutionrelative:makhazin.core\\entities\\rating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC9DBE01-26B6-48EB-BC2B-29B00876A1C7}|MAKHAZIN.Core\\MAKHAZIN.Core.csproj|d:\\backend\\makhazin\\makhazen\\makhazin.solution\\makhazin.core\\entities\\bid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC9DBE01-26B6-48EB-BC2B-29B00876A1C7}|MAKHAZIN.Core\\MAKHAZIN.Core.csproj|solutionrelative:makhazin.core\\entities\\bid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC9DBE01-26B6-48EB-BC2B-29B00876A1C7}|MAKHAZIN.Core\\MAKHAZIN.Core.csproj|d:\\backend\\makhazin\\makhazen\\makhazin.solution\\makhazin.core\\entities\\auction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC9DBE01-26B6-48EB-BC2B-29B00876A1C7}|MAKHAZIN.Core\\MAKHAZIN.Core.csproj|solutionrelative:makhazin.core\\entities\\auction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC9DBE01-26B6-48EB-BC2B-29B00876A1C7}|MAKHAZIN.Core\\MAKHAZIN.Core.csproj|d:\\backend\\makhazin\\makhazen\\makhazin.solution\\makhazin.core\\entities\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC9DBE01-26B6-48EB-BC2B-29B00876A1C7}|MAKHAZIN.Core\\MAKHAZIN.Core.csproj|solutionrelative:makhazin.core\\entities\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC9DBE01-26B6-48EB-BC2B-29B00876A1C7}|MAKHAZIN.Core\\MAKHAZIN.Core.csproj|d:\\backend\\makhazin\\makhazen\\makhazin.solution\\makhazin.core\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC9DBE01-26B6-48EB-BC2B-29B00876A1C7}|MAKHAZIN.Core\\MAKHAZIN.Core.csproj|solutionrelative:makhazin.core\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC9DBE01-26B6-48EB-BC2B-29B00876A1C7}|MAKHAZIN.Core\\MAKHAZIN.Core.csproj|d:\\backend\\makhazin\\makhazen\\makhazin.solution\\makhazin.core\\entities\\stockitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC9DBE01-26B6-48EB-BC2B-29B00876A1C7}|MAKHAZIN.Core\\MAKHAZIN.Core.csproj|solutionrelative:makhazin.core\\entities\\stockitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC9DBE01-26B6-48EB-BC2B-29B00876A1C7}|MAKHAZIN.Core\\MAKHAZIN.Core.csproj|d:\\backend\\makhazin\\makhazen\\makhazin.solution\\makhazin.core\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC9DBE01-26B6-48EB-BC2B-29B00876A1C7}|MAKHAZIN.Core\\MAKHAZIN.Core.csproj|solutionrelative:makhazin.core\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC9DBE01-26B6-48EB-BC2B-29B00876A1C7}|MAKHAZIN.Core\\MAKHAZIN.Core.csproj|d:\\backend\\makhazin\\makhazen\\makhazin.solution\\makhazin.core\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC9DBE01-26B6-48EB-BC2B-29B00876A1C7}|MAKHAZIN.Core\\MAKHAZIN.Core.csproj|solutionrelative:makhazin.core\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6D9C28DC-3918-4052-89D5-13626A0961D6}|MAKHAZIN.APIs\\MAKHAZIN.APIs.csproj|d:\\backend\\makhazin\\makhazen\\makhazin.solution\\makhazin.apis\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D9C28DC-3918-4052-89D5-13626A0961D6}|MAKHAZIN.APIs\\MAKHAZIN.APIs.csproj|solutionrelative:makhazin.apis\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -43,12 +83,142 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ReportRequest.cs",
+              "DocumentMoniker": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\Entities\\ReportRequest.cs",
+              "RelativeDocumentMoniker": "MAKHAZIN.Core\\Entities\\ReportRequest.cs",
+              "ToolTip": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\Entities\\ReportRequest.cs",
+              "RelativeToolTip": "MAKHAZIN.Core\\Entities\\ReportRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T11:29:19.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Notification.cs",
+              "DocumentMoniker": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\Entities\\Notification.cs",
+              "RelativeDocumentMoniker": "MAKHAZIN.Core\\Entities\\Notification.cs",
+              "ToolTip": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\Entities\\Notification.cs",
+              "RelativeToolTip": "MAKHAZIN.Core\\Entities\\Notification.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T11:29:02.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Rating.cs",
+              "DocumentMoniker": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\Entities\\Rating.cs",
+              "RelativeDocumentMoniker": "MAKHAZIN.Core\\Entities\\Rating.cs",
+              "ToolTip": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\Entities\\Rating.cs",
+              "RelativeToolTip": "MAKHAZIN.Core\\Entities\\Rating.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T11:28:48.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Bid.cs",
+              "DocumentMoniker": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\Entities\\Bid.cs",
+              "RelativeDocumentMoniker": "MAKHAZIN.Core\\Entities\\Bid.cs",
+              "ToolTip": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\Entities\\Bid.cs",
+              "RelativeToolTip": "MAKHAZIN.Core\\Entities\\Bid.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T11:28:31.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Auction.cs",
+              "DocumentMoniker": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\Entities\\Auction.cs",
+              "RelativeDocumentMoniker": "MAKHAZIN.Core\\Entities\\Auction.cs",
+              "ToolTip": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\Entities\\Auction.cs",
+              "RelativeToolTip": "MAKHAZIN.Core\\Entities\\Auction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T11:28:12.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\Entities\\OrderItem.cs",
+              "RelativeDocumentMoniker": "MAKHAZIN.Core\\Entities\\OrderItem.cs",
+              "ToolTip": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\Entities\\OrderItem.cs",
+              "RelativeToolTip": "MAKHAZIN.Core\\Entities\\OrderItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T11:27:57.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\Entities\\Order.cs",
+              "RelativeDocumentMoniker": "MAKHAZIN.Core\\Entities\\Order.cs",
+              "ToolTip": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\Entities\\Order.cs",
+              "RelativeToolTip": "MAKHAZIN.Core\\Entities\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T11:27:42.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "StockItem.cs",
+              "DocumentMoniker": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\Entities\\StockItem.cs",
+              "RelativeDocumentMoniker": "MAKHAZIN.Core\\Entities\\StockItem.cs",
+              "ToolTip": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\Entities\\StockItem.cs",
+              "RelativeToolTip": "MAKHAZIN.Core\\Entities\\StockItem.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T11:27:21.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\Entities\\Product.cs",
+              "RelativeDocumentMoniker": "MAKHAZIN.Core\\Entities\\Product.cs",
+              "ToolTip": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\Entities\\Product.cs",
+              "RelativeToolTip": "MAKHAZIN.Core\\Entities\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T11:26:50.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "MAKHAZIN.Core\\Entities\\User.cs",
+              "ToolTip": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\Entities\\User.cs",
+              "RelativeToolTip": "MAKHAZIN.Core\\Entities\\User.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T11:26:29.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.APIs\\Program.cs",
               "RelativeDocumentMoniker": "MAKHAZIN.APIs\\Program.cs",
               "ToolTip": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.APIs\\Program.cs",
               "RelativeToolTip": "MAKHAZIN.APIs\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-05T13:12:45.286Z",
               "EditorCaption": ""

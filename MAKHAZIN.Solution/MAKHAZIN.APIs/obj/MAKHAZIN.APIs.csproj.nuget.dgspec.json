@@ -32,6 +32,9 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\MAKHAZIN.Core.csproj": {
+                "projectPath": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\MAKHAZIN.Core.csproj"
+              },
               "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Repository\\MAKHAZIN.Repository.csproj": {
                 "projectPath": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Repository\\MAKHAZIN.Repository.csproj"
               }
@@ -55,6 +58,8 @@
           "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.17, )"
             },
@@ -131,6 +136,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[13.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
