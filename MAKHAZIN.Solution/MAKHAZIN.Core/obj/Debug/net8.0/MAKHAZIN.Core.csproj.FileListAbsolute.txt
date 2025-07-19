@@ -9,3 +9,16 @@ D:\Backend\MAKHAZIN\MAKHAZIN.Solution\MAKHAZIN.Core\obj\Debug\net8.0\MAKHAZIN.Co
 D:\Backend\MAKHAZIN\MAKHAZIN.Solution\MAKHAZIN.Core\obj\Debug\net8.0\refint\MAKHAZIN.Core.dll
 D:\Backend\MAKHAZIN\MAKHAZIN.Solution\MAKHAZIN.Core\obj\Debug\net8.0\MAKHAZIN.Core.pdb
 D:\Backend\MAKHAZIN\MAKHAZIN.Solution\MAKHAZIN.Core\obj\Debug\net8.0\ref\MAKHAZIN.Core.dll
+D:\Backend\MAKHAZIN\makhazen\MAKHAZIN.Solution\MAKHAZIN.Core\bin\Debug\net8.0\MAKHAZIN.Core.deps.json
+D:\Backend\MAKHAZIN\makhazen\MAKHAZIN.Solution\MAKHAZIN.Core\bin\Debug\net8.0\MAKHAZIN.Core.dll
+D:\Backend\MAKHAZIN\makhazen\MAKHAZIN.Solution\MAKHAZIN.Core\bin\Debug\net8.0\MAKHAZIN.Core.pdb
+D:\Backend\MAKHAZIN\makhazen\MAKHAZIN.Solution\MAKHAZIN.Core\obj\Debug\net8.0\MAKHAZIN.Core.csproj.AssemblyReference.cache
+D:\Backend\MAKHAZIN\makhazen\MAKHAZIN.Solution\MAKHAZIN.Core\obj\Debug\net8.0\MAKHAZIN.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Backend\MAKHAZIN\makhazen\MAKHAZIN.Solution\MAKHAZIN.Core\obj\Debug\net8.0\MAKHAZIN.Core.AssemblyInfoInputs.cache
+D:\Backend\MAKHAZIN\makhazen\MAKHAZIN.Solution\MAKHAZIN.Core\obj\Debug\net8.0\MAKHAZIN.Core.AssemblyInfo.cs
+D:\Backend\MAKHAZIN\makhazen\MAKHAZIN.Solution\MAKHAZIN.Core\obj\Debug\net8.0\MAKHAZIN.Core.csproj.CoreCompileInputs.cache
+D:\Backend\MAKHAZIN\makhazen\MAKHAZIN.Solution\MAKHAZIN.Core\obj\Debug\net8.0\MAKHAZIN.Core.sourcelink.json
+D:\Backend\MAKHAZIN\makhazen\MAKHAZIN.Solution\MAKHAZIN.Core\obj\Debug\net8.0\MAKHAZIN.Core.dll
+D:\Backend\MAKHAZIN\makhazen\MAKHAZIN.Solution\MAKHAZIN.Core\obj\Debug\net8.0\refint\MAKHAZIN.Core.dll
+D:\Backend\MAKHAZIN\makhazen\MAKHAZIN.Solution\MAKHAZIN.Core\obj\Debug\net8.0\MAKHAZIN.Core.pdb
+D:\Backend\MAKHAZIN\makhazen\MAKHAZIN.Solution\MAKHAZIN.Core\obj\Debug\net8.0\ref\MAKHAZIN.Core.dll

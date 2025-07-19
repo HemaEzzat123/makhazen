@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -9,13 +8,11 @@ namespace MAKHAZIN.Core.Entities
 {
     public class User : BaseEntity
     {
+        public string ExternalId { get; set; } // For User in the identity Db
         public string Name { get; set; }
-        public string Email { get; set; }
-        public string HashedPassword { get; set; }
-        public string PhoneNumber { get; set; }
-        public string Address { get; set; }
-        public string Role { get; set; }
-        public bool IsActive { get; set; }
+        public string? Address { get; set; }
+        public bool? IsActive { get; set; }
+
 
         // Navigation Properties
         public ICollection<StockItem> StockItems { get; set; }
@@ -28,5 +25,4 @@ namespace MAKHAZIN.Core.Entities
         public ICollection<Notification> Notifications { get; set; }
         public ICollection<ReportRequest> ReportRequests { get; set; }
     }
-
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MAKHAZIN.Core.Entities.Identity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,8 +9,8 @@ namespace MAKHAZIN.Core.Entities
 {
     public class Bid : BaseEntity
     {
-        public Guid AuctionId { get; set; }
-        public Guid UserId { get; set; }
+        public int AuctionId { get; set; }
+        public int UserId { get; set; }
 
         public decimal BidPrice { get; set; }
         public DateTime Timestamp { get; set; }

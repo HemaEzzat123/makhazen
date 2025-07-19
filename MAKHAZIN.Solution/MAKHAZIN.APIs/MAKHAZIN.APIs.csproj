@@ -15,7 +15,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MAKHAZIN.Core\MAKHAZIN.Core.csproj" />
     <ProjectReference Include="..\MAKHAZIN.Repository\MAKHAZIN.Repository.csproj" />
+    <ProjectReference Include="..\MAKHAZIN.Services\MAKHAZIN.Services.csproj" />
   </ItemGroup>
 
   <ItemGroup>

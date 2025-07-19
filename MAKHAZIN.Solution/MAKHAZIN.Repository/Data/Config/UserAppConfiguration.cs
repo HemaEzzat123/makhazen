@@ -1,4 +1,5 @@
 ﻿using MAKHAZIN.Core.Entities;
+using MAKHAZIN.Core.Entities.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
@@ -9,20 +10,13 @@ using System.Threading.Tasks;
 
 namespace MAKHAZIN.Repository.Data.Config
 {
-    public class UserConfiguration : IEntityTypeConfiguration<User>
+    internal class UserAppConfiguration : IEntityTypeConfiguration<User>
     {
         public void Configure(EntityTypeBuilder<User> builder)
         {
-            builder.Property(u => u.Name).IsRequired().HasMaxLength(100);
-            builder.Property(u => u.Email).IsRequired().HasMaxLength(150);
-            builder.HasIndex(u => u.Email).IsUnique();
-
-            builder.Property(u => u.HashedPassword).IsRequired();
-            builder.Property(u => u.Role).IsRequired().HasMaxLength(50);
-
             builder.HasMany(u => u.StockItems)
-                   .WithOne(s => s.User)
-                   .HasForeignKey(s => s.UserId);
+       .WithOne(s => s.User)
+       .HasForeignKey(s => s.UserId);
 
             builder.HasMany(u => u.OrdersPlaced)
                    .WithOne(o => o.Buyer)
@@ -40,7 +34,8 @@ namespace MAKHAZIN.Repository.Data.Config
 
             builder.HasMany(u => u.Bids)
                    .WithOne(b => b.User)
-                   .HasForeignKey(b => b.UserId);
+                   .HasForeignKey(b => b.UserId)
+                   .OnDelete(DeleteBehavior.Restrict);
 
             builder.HasMany(u => u.RatingsGiven)
                    .WithOne(r => r.Rater)
@@ -59,6 +54,9 @@ namespace MAKHAZIN.Repository.Data.Config
             builder.HasMany(u => u.ReportRequests)
                    .WithOne(r => r.User)
                    .HasForeignKey(r => r.UserId);
+
+            builder.HasIndex(u => u.ExternalId)
+                   .IsUnique();
         }
     }
 }

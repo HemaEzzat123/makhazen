@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MAKHAZIN.Core.Entities.Identity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,8 +9,8 @@ namespace MAKHAZIN.Core.Entities
 {
     public class Rating : BaseEntity
     {
-        public Guid RaterId { get; set; }
-        public Guid RateeId { get; set; }
+        public int RaterId { get; set; }
+        public int RateeId { get; set; }
 
         public int Score { get; set; }
         public string Comment { get; set; }

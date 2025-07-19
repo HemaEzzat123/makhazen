@@ -1,4 +1,5 @@
-﻿using MAKHAZIN.Core.Enums;
+﻿using MAKHAZIN.Core.Entities.Identity;
+using MAKHAZIN.Core.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,15 +10,15 @@ namespace MAKHAZIN.Core.Entities
 {
     public class Order : BaseEntity
     {
-        public Guid BuyerId { get; set; }
-        public Guid SellerId { get; set; }
+        public int BuyerId { get; set; }
+        public int SellerId { get; set; }
         public DateTime OrderDate { get; set; }
         public OrderStatus Status { get; set; } // [Enum]
 
         // Navigation
+        public ICollection<OrderItem> OrderItems { get; set; }
         public User Buyer { get; set; }
         public User Seller { get; set; }
-        public ICollection<OrderItem> OrderItems { get; set; }
     }
 
 }

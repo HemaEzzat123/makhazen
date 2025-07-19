@@ -1,4 +1,5 @@
-﻿using MAKHAZIN.Core.Enums;
+﻿using MAKHAZIN.Core.Entities.Identity;
+using MAKHAZIN.Core.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace MAKHAZIN.Core.Entities
 {
     public class ReportRequest : BaseEntity
     {
-        public Guid UserId { get; set; }
+        public int UserId { get; set; }
 
         public string ReportType { get; set; }     // e.g. Inventory, Sales
         public string FileFormat { get; set; }     // PDF, Excel

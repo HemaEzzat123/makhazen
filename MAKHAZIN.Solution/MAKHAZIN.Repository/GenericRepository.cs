@@ -1,5 +1,6 @@
 ﻿using MAKHAZIN.Core.Entities;
 using MAKHAZIN.Core.Repository.Contract;
+using MAKHAZIN.Repository.Data;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
