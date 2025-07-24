@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MAKHAZIN.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+101b17588ad4f903c94ea041584267ec4df23d5d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9ab9b8f8f5fed7b088632da03d2f2304cc9331b0")]
 [assembly: System.Reflection.AssemblyProductAttribute("MAKHAZIN.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MAKHAZIN.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

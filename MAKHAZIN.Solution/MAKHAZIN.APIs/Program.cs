@@ -65,6 +65,11 @@ namespace MAKHAZIN.APIs
                 logger.LogError(ex, "Error occured during the migration of the Database");
             }
             #endregion
+            #region Seeding Roles
+
+            await SeedRoles.SeedRoleAsync(services);
+
+            #endregion
             #region Configure Middlewares
             app.UseMiddleware<ExceptionMiddleware>();
             if (app.Environment.IsDevelopment())
