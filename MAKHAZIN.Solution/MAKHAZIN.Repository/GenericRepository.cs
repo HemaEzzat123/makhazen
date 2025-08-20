@@ -39,5 +39,9 @@ namespace MAKHAZIN.Repository
         {
             return await _context.Set<T>().Where(predicate).ToListAsync();
         }
+        public async Task<T?> FindFirstOrDefaultAsync(Expression<Func<T, bool>> predicate)
+        {
+            return await _context.Set<T>().FirstOrDefaultAsync(predicate);
+        }
     }
 }

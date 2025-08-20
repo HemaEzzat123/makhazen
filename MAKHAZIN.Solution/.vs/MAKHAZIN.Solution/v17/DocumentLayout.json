@@ -3,36 +3,8 @@
   "WorkspaceRootPath": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CB028C2E-3FA6-45AA-9D63-1B1B8BD96EC5}|MAKHAZIN.Repository\\MAKHAZIN.Repository.csproj|d:\\backend\\makhazin\\makhazen\\makhazin.solution\\makhazin.repository\\identity\\makhazinidentitydbcontextseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB028C2E-3FA6-45AA-9D63-1B1B8BD96EC5}|MAKHAZIN.Repository\\MAKHAZIN.Repository.csproj|solutionrelative:makhazin.repository\\identity\\makhazinidentitydbcontextseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D9C28DC-3918-4052-89D5-13626A0961D6}|MAKHAZIN.APIs\\MAKHAZIN.APIs.csproj|d:\\backend\\makhazin\\makhazen\\makhazin.solution\\makhazin.apis\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D9C28DC-3918-4052-89D5-13626A0961D6}|MAKHAZIN.APIs\\MAKHAZIN.APIs.csproj|solutionrelative:makhazin.apis\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D9C28DC-3918-4052-89D5-13626A0961D6}|MAKHAZIN.APIs\\MAKHAZIN.APIs.csproj|d:\\backend\\makhazin\\makhazen\\makhazin.solution\\makhazin.apis\\extensions\\seedrolesasync.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D9C28DC-3918-4052-89D5-13626A0961D6}|MAKHAZIN.APIs\\MAKHAZIN.APIs.csproj|solutionrelative:makhazin.apis\\extensions\\seedrolesasync.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39CE5E15-2218-421B-9F8C-D0193B138847}|MAKHAZIN.Services\\MAKHAZIN.Services.csproj|d:\\backend\\makhazin\\makhazen\\makhazin.solution\\makhazin.services\\auth\\commands\\registercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39CE5E15-2218-421B-9F8C-D0193B138847}|MAKHAZIN.Services\\MAKHAZIN.Services.csproj|solutionrelative:makhazin.services\\auth\\commands\\registercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC9DBE01-26B6-48EB-BC2B-29B00876A1C7}|MAKHAZIN.Core\\MAKHAZIN.Core.csproj|d:\\backend\\makhazin\\makhazen\\makhazin.solution\\makhazin.core\\application\\features\\auth\\commands\\registercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC9DBE01-26B6-48EB-BC2B-29B00876A1C7}|MAKHAZIN.Core\\MAKHAZIN.Core.csproj|solutionrelative:makhazin.core\\application\\features\\auth\\commands\\registercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC9DBE01-26B6-48EB-BC2B-29B00876A1C7}|MAKHAZIN.Core\\MAKHAZIN.Core.csproj|d:\\backend\\makhazin\\makhazen\\makhazin.solution\\makhazin.core\\enums\\userroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC9DBE01-26B6-48EB-BC2B-29B00876A1C7}|MAKHAZIN.Core\\MAKHAZIN.Core.csproj|solutionrelative:makhazin.core\\enums\\userroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D9C28DC-3918-4052-89D5-13626A0961D6}|MAKHAZIN.APIs\\MAKHAZIN.APIs.csproj|d:\\backend\\makhazin\\makhazen\\makhazin.solution\\makhazin.apis\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D9C28DC-3918-4052-89D5-13626A0961D6}|MAKHAZIN.APIs\\MAKHAZIN.APIs.csproj|solutionrelative:makhazin.apis\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB028C2E-3FA6-45AA-9D63-1B1B8BD96EC5}|MAKHAZIN.Repository\\MAKHAZIN.Repository.csproj|d:\\backend\\makhazin\\makhazen\\makhazin.solution\\makhazin.repository\\data\\makhazindbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB028C2E-3FA6-45AA-9D63-1B1B8BD96EC5}|MAKHAZIN.Repository\\MAKHAZIN.Repository.csproj|solutionrelative:makhazin.repository\\data\\makhazindbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D9C28DC-3918-4052-89D5-13626A0961D6}|MAKHAZIN.APIs\\MAKHAZIN.APIs.csproj|d:\\backend\\makhazin\\makhazen\\makhazin.solution\\makhazin.apis\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D9C28DC-3918-4052-89D5-13626A0961D6}|MAKHAZIN.APIs\\MAKHAZIN.APIs.csproj|solutionrelative:makhazin.apis\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,105 +38,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SeedRolesAsync.cs",
-              "DocumentMoniker": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.APIs\\Extensions\\SeedRolesAsync.cs",
-              "RelativeDocumentMoniker": "MAKHAZIN.APIs\\Extensions\\SeedRolesAsync.cs",
-              "ToolTip": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.APIs\\Extensions\\SeedRolesAsync.cs",
-              "RelativeToolTip": "MAKHAZIN.APIs\\Extensions\\SeedRolesAsync.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T12:08:46.377Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MAKHAZINIdentityDbContextSeed.cs",
-              "DocumentMoniker": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Repository\\Identity\\MAKHAZINIdentityDbContextSeed.cs",
-              "RelativeDocumentMoniker": "MAKHAZIN.Repository\\Identity\\MAKHAZINIdentityDbContextSeed.cs",
-              "ToolTip": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Repository\\Identity\\MAKHAZINIdentityDbContextSeed.cs",
-              "RelativeToolTip": "MAKHAZIN.Repository\\Identity\\MAKHAZINIdentityDbContextSeed.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAIwBcAAAAsAAAAAAAAAA==",
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.APIs\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "MAKHAZIN.APIs\\Controllers\\UsersController.cs",
+              "ToolTip": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.APIs\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "MAKHAZIN.APIs\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwBsAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T11:54:15.445Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserRoles.cs",
-              "DocumentMoniker": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\Enums\\UserRoles.cs",
-              "RelativeDocumentMoniker": "MAKHAZIN.Core\\Enums\\UserRoles.cs",
-              "ToolTip": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\Enums\\UserRoles.cs",
-              "RelativeToolTip": "MAKHAZIN.Core\\Enums\\UserRoles.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T11:51:01.994Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RegisterCommand.cs",
-              "DocumentMoniker": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\Application\\Features\\Auth\\Commands\\RegisterCommand.cs",
-              "RelativeDocumentMoniker": "MAKHAZIN.Core\\Application\\Features\\Auth\\Commands\\RegisterCommand.cs",
-              "ToolTip": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\Application\\Features\\Auth\\Commands\\RegisterCommand.cs",
-              "RelativeToolTip": "MAKHAZIN.Core\\Application\\Features\\Auth\\Commands\\RegisterCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-19T15:17:27.541Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RegisterCommandHandler.cs",
-              "DocumentMoniker": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Services\\Auth\\Commands\\RegisterCommandHandler.cs",
-              "RelativeDocumentMoniker": "MAKHAZIN.Services\\Auth\\Commands\\RegisterCommandHandler.cs",
-              "ToolTip": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Services\\Auth\\Commands\\RegisterCommandHandler.cs",
-              "RelativeToolTip": "MAKHAZIN.Services\\Auth\\Commands\\RegisterCommandHandler.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAYwEsAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-19T14:54:37.25Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MAKHAZINDbContext.cs",
-              "DocumentMoniker": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Repository\\Data\\MAKHAZINDbContext.cs",
-              "RelativeDocumentMoniker": "MAKHAZIN.Repository\\Data\\MAKHAZINDbContext.cs",
-              "ToolTip": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Repository\\Data\\MAKHAZINDbContext.cs",
-              "RelativeToolTip": "MAKHAZIN.Repository\\Data\\MAKHAZINDbContext.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwBcAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T14:56:09.203Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.APIs\\Program.cs",
-              "RelativeDocumentMoniker": "MAKHAZIN.APIs\\Program.cs",
-              "ToolTip": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.APIs\\Program.cs",
-              "RelativeToolTip": "MAKHAZIN.APIs\\Program.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBUAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T12:43:57.894Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AccountsController.cs",
-              "DocumentMoniker": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.APIs\\Controllers\\AccountsController.cs",
-              "RelativeDocumentMoniker": "MAKHAZIN.APIs\\Controllers\\AccountsController.cs",
-              "ToolTip": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.APIs\\Controllers\\AccountsController.cs",
-              "RelativeToolTip": "MAKHAZIN.APIs\\Controllers\\AccountsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T12:25:25.865Z",
+              "WhenOpened": "2025-08-19T12:50:42.244Z",
               "EditorCaption": ""
             }
           ]

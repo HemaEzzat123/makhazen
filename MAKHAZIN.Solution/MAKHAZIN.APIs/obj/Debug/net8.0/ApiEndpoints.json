@@ -27,6 +27,32 @@
   },
   {
     "ContainingType": "MAKHAZIN.APIs.Controllers.AccountsController",
+    "Method": "LoginWithRefreshToken",
+    "RelativePath": "api/Accounts/LoginWithRefreshToken",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "MAKHAZIN.Core.Application.Features.Auth.Commands.LoginCommandWithRefreshToken",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MAKHAZIN.Core.Application.Features.Auth.Commands.LoginResponseWithRefreshToken",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MAKHAZIN.APIs.Controllers.AccountsController",
     "Method": "Register",
     "RelativePath": "api/Accounts/Register",
     "HttpMethod": "POST",
@@ -50,6 +76,32 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "MAKHAZIN.APIs.Controllers.UsersController",
+    "Method": "GetProfile",
+    "RelativePath": "api/Users/profile",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MAKHAZIN.APIs.Controllers.UsersController",
+    "Method": "UpdateProfile",
+    "RelativePath": "api/Users/updateProfile",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "MAKHAZIN.Core.DTOs.UpdateProfileDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "MAKHAZIN.APIs.Controllers.WeatherForecastController",

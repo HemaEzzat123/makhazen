@@ -22,6 +22,9 @@ namespace MAKHAZIN.APIs
             webApplicationBuilder.Services.AddControllers();
             webApplicationBuilder.Services.AddEndpointsApiExplorer();
             webApplicationBuilder.Services.AddSwaggerGen();
+            webApplicationBuilder.Logging.ClearProviders();
+            webApplicationBuilder.Logging.AddConsole();
+            webApplicationBuilder.Services.AddHttpContextAccessor();
 
             webApplicationBuilder.Services.AddDbContext<MAKHAZINDbContext>(options =>
             {

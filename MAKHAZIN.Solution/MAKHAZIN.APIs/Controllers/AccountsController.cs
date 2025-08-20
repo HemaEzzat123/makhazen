@@ -23,16 +23,24 @@ namespace MAKHAZIN.APIs.Controllers
         {
             var result = await _mediator.Send(command);
             if (!result.IsSuccess)
-                return BadRequest(new ApiResponse(StatusCodes.Status400BadRequest,result.Error));
+                return BadRequest(new ApiResponse(StatusCodes.Status400BadRequest, result.Error));
             return Ok(result);
         }
         [HttpPost("Login")]
         public async Task<ActionResult<UserDTO>> Login(LoginCommand command)
         {
             var result = await _mediator.Send(command);
-            if(!result.IsSuccess)
+            if (!result.IsSuccess)
                 return Unauthorized(new ApiResponse(StatusCodes.Status401Unauthorized, result.Error));
 
+            return Ok(result);
+        }
+        [HttpPost("LoginWithRefreshToken")]
+        public async Task<ActionResult<LoginResponseWithRefreshToken>> LoginWithRefreshToken(LoginCommandWithRefreshToken command)
+        {
+            var result = await _mediator.Send(command);
+            if (!result.IsSuccess)
+                return Unauthorized(new ApiResponse(StatusCodes.Status401Unauthorized, result.Error));
             return Ok(result);
         }
     }

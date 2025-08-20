@@ -11,5 +11,6 @@ namespace MAKHAZIN.Core.Services.Contract
     public interface ITokenService
     {
         Task<string> CreateTokenAsync(AppUser user, UserManager<AppUser> userManager);
+        string GenerateRefreshToken();
     }
 }

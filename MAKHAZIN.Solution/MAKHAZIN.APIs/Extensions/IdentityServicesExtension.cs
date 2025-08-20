@@ -30,7 +30,7 @@ namespace MAKHAZIN.APIs.Extensions
                              ValidateAudience = true,
                              ValidAudience = configuration["JWT:ValidAudience"],
                              ValidateLifetime = true,
-                             ClockSkew = TimeSpan.FromDays(double.Parse(configuration["JWT:ExpirationInDays"])),
+                             ClockSkew = TimeSpan.FromDays(double.Parse(configuration["JWT:ExpirationInMinutes"])),
                              ValidateIssuerSigningKey = true,
                              IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["JWT:Key"]))
                          };

@@ -1100,7 +1100,7 @@
       },
       "MAKHAZIN.Services/1.0.0": {
         "dependencies": {
-          "MAKHAZIN.Core": "1.0.0",
+          "MAKHAZIN.Repository": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.18"
         },
         "runtime": {

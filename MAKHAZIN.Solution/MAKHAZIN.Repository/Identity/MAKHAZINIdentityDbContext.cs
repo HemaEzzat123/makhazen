@@ -1,6 +1,7 @@
 ﻿using MAKHAZIN.Core.Entities;
 using MAKHAZIN.Core.Entities.Identity;
 using MAKHAZIN.Repository.Data;
+using MAKHAZIN.Repository.Identity.Config;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -22,7 +23,8 @@ namespace MAKHAZIN.Repository.Identity
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
-            //builder.ApplyConfigurationsFromAssembly(typeof(MAKHAZINIdentityDbContext).Assembly); // Reflection to apply all configurations in the assembly
+            builder.ApplyConfiguration(new RefreshTokenConfig());
         }
+        public DbSet<RefreshToken> RefreshToken { get; set; }
     }
 }
