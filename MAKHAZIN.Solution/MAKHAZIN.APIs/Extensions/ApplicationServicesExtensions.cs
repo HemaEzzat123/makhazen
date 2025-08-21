@@ -1,16 +1,24 @@
 ﻿using MAKHAZIN.APIs.Errors;
 using MAKHAZIN.Core;
+using MAKHAZIN.Core.Services.Contract;
 using MAKHAZIN.Repository;
+using MAKHAZIN.Services;
+using MAKHAZIN.Services.Configurations;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MAKHAZIN.APIs.Extensions
 {
     public static class ApplicationServicesExtensions
     {
-        public static IServiceCollection AddApplicationServices(this IServiceCollection services)
+        public static IServiceCollection AddApplicationServices(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<IEmailService, EmailService>();
             //services.AddAutoMapper(typeof(MappingProfile));
+
+            // Bind EmailSettings from configuration
+            services.Configure<EmailSettings>(configuration.GetSection("MailSettings"));
+            services.Configure<FrontendSettings>(configuration.GetSection("FrontendSettings"));
 
             #region Error Handling
 

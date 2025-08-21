@@ -43,5 +43,22 @@ namespace MAKHAZIN.APIs.Controllers
                 return Unauthorized(new ApiResponse(StatusCodes.Status401Unauthorized, result.Error));
             return Ok(result);
         }
+
+        [HttpPost("forget-password")]
+        public async Task<IActionResult> ForgotPassword(ForgotPasswordCommand command)
+        {
+            var result = await _mediator.Send(command);
+            if (!result.IsSuccess)
+                return BadRequest(new ApiResponse(StatusCodes.Status400BadRequest, result.Error));
+            return Ok(result);
+        }
+        [HttpPost("reset-password")]
+        public async Task<IActionResult> ResetPassword(ResetPasswordCommand command)
+        {
+            var result = await _mediator.Send(command);
+            if (!result.IsSuccess)
+                return BadRequest(new ApiResponse(StatusCodes.Status400BadRequest, result.Error));
+            return Ok(result);
+        }
     }
 }

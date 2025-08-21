@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6D9C28DC-3918-4052-89D5-13626A0961D6}|MAKHAZIN.APIs\\MAKHAZIN.APIs.csproj|d:\\backend\\makhazin\\makhazen\\makhazin.solution\\makhazin.apis\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D9C28DC-3918-4052-89D5-13626A0961D6}|MAKHAZIN.APIs\\MAKHAZIN.APIs.csproj|solutionrelative:makhazin.apis\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39CE5E15-2218-421B-9F8C-D0193B138847}|MAKHAZIN.Services\\MAKHAZIN.Services.csproj|d:\\backend\\makhazin\\makhazen\\makhazin.solution\\makhazin.services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39CE5E15-2218-421B-9F8C-D0193B138847}|MAKHAZIN.Services\\MAKHAZIN.Services.csproj|solutionrelative:makhazin.services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{39CE5E15-2218-421B-9F8C-D0193B138847}|MAKHAZIN.Services\\MAKHAZIN.Services.csproj|d:\\backend\\makhazin\\makhazen\\makhazin.solution\\makhazin.services\\auth\\commands\\forgotpasswordcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39CE5E15-2218-421B-9F8C-D0193B138847}|MAKHAZIN.Services\\MAKHAZIN.Services.csproj|solutionrelative:makhazin.services\\auth\\commands\\forgotpasswordcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{39CE5E15-2218-421B-9F8C-D0193B138847}|MAKHAZIN.Services\\MAKHAZIN.Services.csproj|d:\\backend\\makhazin\\makhazen\\makhazin.solution\\makhazin.services\\auth\\commands\\logincommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{39CE5E15-2218-421B-9F8C-D0193B138847}|MAKHAZIN.Services\\MAKHAZIN.Services.csproj|solutionrelative:makhazin.services\\auth\\commands\\logincommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC9DBE01-26B6-48EB-BC2B-29B00876A1C7}|MAKHAZIN.Core\\MAKHAZIN.Core.csproj|d:\\backend\\makhazin\\makhazen\\makhazin.solution\\makhazin.core\\enums\\commonresponses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC9DBE01-26B6-48EB-BC2B-29B00876A1C7}|MAKHAZIN.Core\\MAKHAZIN.Core.csproj|solutionrelative:makhazin.core\\enums\\commonresponses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC9DBE01-26B6-48EB-BC2B-29B00876A1C7}|MAKHAZIN.Core\\MAKHAZIN.Core.csproj|d:\\backend\\makhazin\\makhazen\\makhazin.solution\\makhazin.core\\application\\features\\auth\\commands\\forgotpasswordcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC9DBE01-26B6-48EB-BC2B-29B00876A1C7}|MAKHAZIN.Core\\MAKHAZIN.Core.csproj|solutionrelative:makhazin.core\\application\\features\\auth\\commands\\forgotpasswordcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +26,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 7,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginCommandHandler.cs",
+              "DocumentMoniker": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Services\\Auth\\Commands\\LoginCommandHandler.cs",
+              "RelativeDocumentMoniker": "MAKHAZIN.Services\\Auth\\Commands\\LoginCommandHandler.cs",
+              "ToolTip": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Services\\Auth\\Commands\\LoginCommandHandler.cs",
+              "RelativeToolTip": "MAKHAZIN.Services\\Auth\\Commands\\LoginCommandHandler.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwCUAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T13:42:25.182Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
@@ -46,41 +63,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.APIs\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "MAKHAZIN.APIs\\Controllers\\UsersController.cs",
-              "ToolTip": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.APIs\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "MAKHAZIN.APIs\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAABoAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T12:50:42.244Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TokenService.cs",
-              "DocumentMoniker": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Services\\TokenService.cs",
-              "RelativeDocumentMoniker": "MAKHAZIN.Services\\TokenService.cs",
-              "ToolTip": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Services\\TokenService.cs",
-              "RelativeToolTip": "MAKHAZIN.Services\\TokenService.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAYwBkAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T12:50:42.264Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "LoginCommandHandler.cs",
-              "DocumentMoniker": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Services\\Auth\\Commands\\LoginCommandHandler.cs",
-              "RelativeDocumentMoniker": "MAKHAZIN.Services\\Auth\\Commands\\LoginCommandHandler.cs",
-              "ToolTip": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Services\\Auth\\Commands\\LoginCommandHandler.cs",
-              "RelativeToolTip": "MAKHAZIN.Services\\Auth\\Commands\\LoginCommandHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAbAAAAAAAAAA==",
+              "Title": "CommonResponses.cs",
+              "DocumentMoniker": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\Enums\\CommonResponses.cs",
+              "RelativeDocumentMoniker": "MAKHAZIN.Core\\Enums\\CommonResponses.cs",
+              "ToolTip": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\Enums\\CommonResponses.cs",
+              "RelativeToolTip": "MAKHAZIN.Core\\Enums\\CommonResponses.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T12:46:40.385Z",
+              "WhenOpened": "2025-08-20T13:43:10.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ForgotPasswordCommandHandler.cs",
+              "DocumentMoniker": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Services\\Auth\\Commands\\ForgotPasswordCommandHandler.cs",
+              "RelativeDocumentMoniker": "MAKHAZIN.Services\\Auth\\Commands\\ForgotPasswordCommandHandler.cs",
+              "ToolTip": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Services\\Auth\\Commands\\ForgotPasswordCommandHandler.cs",
+              "RelativeToolTip": "MAKHAZIN.Services\\Auth\\Commands\\ForgotPasswordCommandHandler.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAQwB8AAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T13:34:17.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ForgotPasswordCommand.cs",
+              "DocumentMoniker": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\Application\\Features\\Auth\\Commands\\ForgotPasswordCommand.cs",
+              "RelativeDocumentMoniker": "MAKHAZIN.Core\\Application\\Features\\Auth\\Commands\\ForgotPasswordCommand.cs",
+              "ToolTip": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\Application\\Features\\Auth\\Commands\\ForgotPasswordCommand.cs",
+              "RelativeToolTip": "MAKHAZIN.Core\\Application\\Features\\Auth\\Commands\\ForgotPasswordCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T13:33:20.324Z",
               "EditorCaption": ""
             }
           ]

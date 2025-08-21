@@ -2,6 +2,7 @@
 using MAKHAZIN.Core.Application.Features.Auth.Commands;
 using MAKHAZIN.Core.DTOs;
 using MAKHAZIN.Core.Entities.Identity;
+using MAKHAZIN.Core.Enums;
 using MAKHAZIN.Core.Services.Contract;
 using MAKHAZIN.Repository.Identity;
 using Microsoft.AspNetCore.Identity;
@@ -29,12 +30,12 @@ namespace MAKHAZIN.Services.Auth.Commands
         {
             var user = await _userManager.FindByEmailAsync(request.Email);
             if(user is null)
-                return Result<LoginResponse>.Failure("Invalid email or Password.... you forget something or you are imposter??!");
+                return Result<LoginResponse>.Failure(CommonResponses.UserNotFound);
 
             var result = await _signInManager.CheckPasswordSignInAsync(user, request.Password,false);
 
             if(!result.Succeeded)
-                return Result<LoginResponse>.Failure("Invalid email or Password.... you forget something ??!");
+                return Result<LoginResponse>.Failure(CommonResponses.InvalidCredentials);
 
             var token = await _tokenService.CreateTokenAsync(user, _userManager);
             var userDto = new UserDTO

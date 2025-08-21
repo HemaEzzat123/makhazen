@@ -38,7 +38,7 @@ namespace MAKHAZIN.APIs
             {
                 cfg.RegisterServicesFromAssemblyContaining<RegisterCommandHandler>();
             });
-            webApplicationBuilder.Services.AddApplicationServices();
+            webApplicationBuilder.Services.AddApplicationServices(webApplicationBuilder.Configuration);
             webApplicationBuilder.Services.AddIdentityServices(webApplicationBuilder.Configuration);
             #endregion
 
