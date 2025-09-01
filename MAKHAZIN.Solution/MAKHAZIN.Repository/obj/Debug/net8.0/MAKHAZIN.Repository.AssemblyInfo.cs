@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MAKHAZIN.Repository")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2168048fb44af96f83b7fe43b8ad540d8de258fb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bb56f76898347994fca581a4739718c2f99743f1")]
 [assembly: System.Reflection.AssemblyProductAttribute("MAKHAZIN.Repository")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MAKHAZIN.Repository")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,4 +1,5 @@
 ﻿using MAKHAZIN.Core.Entities;
+using MAKHAZIN.Core.Sepecification;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,8 @@ namespace MAKHAZIN.Core.Repository.Contract
         Task<IEnumerable<T>> GetAllAsync();
         Task<IEnumerable<T>> FindAsync(Expression<Func<T, bool>> predicate);
         public Task<T?> FindFirstOrDefaultAsync(Expression<Func<T, bool>> predicate);
+        public Task<T?> GetByIdWithSpecAsync(ISpecifications<T> spec);
+        public Task<IReadOnlyList<T>> GetAllWithSpecAsync(ISpecifications<T> spec);
         Task AddAsync(T entity);
         void Update(T entity);
         void Delete(T entity);

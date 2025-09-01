@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CB028C2E-3FA6-45AA-9D63-1B1B8BD96EC5}|MAKHAZIN.Repository\\MAKHAZIN.Repository.csproj|d:\\backend\\makhazin\\makhazen\\makhazin.solution\\makhazin.repository\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB028C2E-3FA6-45AA-9D63-1B1B8BD96EC5}|MAKHAZIN.Repository\\MAKHAZIN.Repository.csproj|solutionrelative:makhazin.repository\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB028C2E-3FA6-45AA-9D63-1B1B8BD96EC5}|MAKHAZIN.Repository\\MAKHAZIN.Repository.csproj|d:\\backend\\makhazin\\makhazen\\makhazin.solution\\makhazin.repository\\specificationevaluator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB028C2E-3FA6-45AA-9D63-1B1B8BD96EC5}|MAKHAZIN.Repository\\MAKHAZIN.Repository.csproj|solutionrelative:makhazin.repository\\specificationevaluator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC9DBE01-26B6-48EB-BC2B-29B00876A1C7}|MAKHAZIN.Core\\MAKHAZIN.Core.csproj|d:\\backend\\makhazin\\makhazen\\makhazin.solution\\makhazin.core\\repository.contract\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC9DBE01-26B6-48EB-BC2B-29B00876A1C7}|MAKHAZIN.Core\\MAKHAZIN.Core.csproj|solutionrelative:makhazin.core\\repository.contract\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC9DBE01-26B6-48EB-BC2B-29B00876A1C7}|MAKHAZIN.Core\\MAKHAZIN.Core.csproj|d:\\backend\\makhazin\\makhazen\\makhazin.solution\\makhazin.core\\sepecification\\ispecifications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC9DBE01-26B6-48EB-BC2B-29B00876A1C7}|MAKHAZIN.Core\\MAKHAZIN.Core.csproj|solutionrelative:makhazin.core\\sepecification\\ispecifications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC9DBE01-26B6-48EB-BC2B-29B00876A1C7}|MAKHAZIN.Core\\MAKHAZIN.Core.csproj|d:\\backend\\makhazin\\makhazen\\makhazin.solution\\makhazin.core\\sepecification\\basesepecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC9DBE01-26B6-48EB-BC2B-29B00876A1C7}|MAKHAZIN.Core\\MAKHAZIN.Core.csproj|solutionrelative:makhazin.core\\sepecification\\basesepecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{39CE5E15-2218-421B-9F8C-D0193B138847}|MAKHAZIN.Services\\MAKHAZIN.Services.csproj|d:\\backend\\makhazin\\makhazen\\makhazin.solution\\makhazin.services\\products\\query\\getproductbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{39CE5E15-2218-421B-9F8C-D0193B138847}|MAKHAZIN.Services\\MAKHAZIN.Services.csproj|solutionrelative:makhazin.services\\products\\query\\getproductbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -14,8 +34,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Repository\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "MAKHAZIN.Repository\\GenericRepository.cs",
+              "ToolTip": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Repository\\GenericRepository.cs",
+              "RelativeToolTip": "MAKHAZIN.Repository\\GenericRepository.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAAADYAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T13:04:10.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IGenericRepository.cs",
+              "DocumentMoniker": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\Repository.Contract\\IGenericRepository.cs",
+              "RelativeDocumentMoniker": "MAKHAZIN.Core\\Repository.Contract\\IGenericRepository.cs",
+              "ToolTip": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\Repository.Contract\\IGenericRepository.cs",
+              "RelativeToolTip": "MAKHAZIN.Core\\Repository.Contract\\IGenericRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T13:02:28.083Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
@@ -38,7 +84,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "SpecificationEvaluator.cs",
+              "DocumentMoniker": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Repository\\SpecificationEvaluator.cs",
+              "RelativeDocumentMoniker": "MAKHAZIN.Repository\\SpecificationEvaluator.cs",
+              "ToolTip": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Repository\\SpecificationEvaluator.cs",
+              "RelativeToolTip": "MAKHAZIN.Repository\\SpecificationEvaluator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T12:55:32.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BaseSepecification.cs",
+              "DocumentMoniker": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\Sepecification\\BaseSepecification.cs",
+              "RelativeDocumentMoniker": "MAKHAZIN.Core\\Sepecification\\BaseSepecification.cs",
+              "ToolTip": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\Sepecification\\BaseSepecification.cs",
+              "RelativeToolTip": "MAKHAZIN.Core\\Sepecification\\BaseSepecification.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T12:47:01.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ISpecifications.cs",
+              "DocumentMoniker": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\Sepecification\\ISpecifications.cs",
+              "RelativeDocumentMoniker": "MAKHAZIN.Core\\Sepecification\\ISpecifications.cs",
+              "ToolTip": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Core\\Sepecification\\ISpecifications.cs",
+              "RelativeToolTip": "MAKHAZIN.Core\\Sepecification\\ISpecifications.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T12:44:20.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "GetProductByIdQueryHandler.cs",
               "DocumentMoniker": "D:\\Backend\\MAKHAZIN\\makhazen\\MAKHAZIN.Solution\\MAKHAZIN.Services\\Products\\Query\\GetProductByIdQueryHandler.cs",
               "RelativeDocumentMoniker": "MAKHAZIN.Services\\Products\\Query\\GetProductByIdQueryHandler.cs",

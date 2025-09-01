@@ -1,5 +1,6 @@
 ﻿using MAKHAZIN.Core.Entities;
 using MAKHAZIN.Core.Repository.Contract;
+using MAKHAZIN.Core.Sepecification;
 using MAKHAZIN.Repository.Data;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -42,6 +43,20 @@ namespace MAKHAZIN.Repository
         public async Task<T?> FindFirstOrDefaultAsync(Expression<Func<T, bool>> predicate)
         {
             return await _context.Set<T>().FirstOrDefaultAsync(predicate);
+        }
+
+        public async Task<T?> GetByIdWithSpecAsync(ISpecifications<T> spec)
+        {
+            return await ApplySpecification(spec).FirstOrDefaultAsync();
+        }
+
+        public async Task<IReadOnlyList<T>> GetAllWithSpecAsync(ISpecifications<T> spec)
+        {
+            return await ApplySpecification(spec).AsNoTracking().ToListAsync();
+        }
+        private IQueryable<T> ApplySpecification(ISpecifications<T> spec)
+        {
+            return SpecificationEvaluator<T>.GetQuery(_context.Set<T>().AsQueryable(), spec);
         }
     }
 }
