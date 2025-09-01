@@ -10,5 +10,6 @@ namespace MAKHAZIN.Core.Enums
     {
         public const string UserNotFound = "Invalid email or Password.... you forget something or you are imposter??!";
         public const string InvalidCredentials = "Invalid email or Password.... you forget something ??!";
+        public const string ProductNotFound = "Product not found";
     }
 }

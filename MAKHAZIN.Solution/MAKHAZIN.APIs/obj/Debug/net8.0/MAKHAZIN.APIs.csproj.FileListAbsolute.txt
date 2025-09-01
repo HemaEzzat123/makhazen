@@ -249,3 +249,8 @@ D:\Backend\MAKHAZIN\makhazen\MAKHAZIN.Solution\MAKHAZIN.APIs\obj\Debug\net8.0\MA
 D:\Backend\MAKHAZIN\makhazen\MAKHAZIN.Solution\MAKHAZIN.APIs\obj\Debug\net8.0\ref\MAKHAZIN.APIs.dll
 D:\Backend\MAKHAZIN\makhazen\MAKHAZIN.Solution\MAKHAZIN.APIs\bin\Debug\net8.0\Microsoft.Extensions.Configuration.FileExtensions.dll
 D:\Backend\MAKHAZIN\makhazen\MAKHAZIN.Solution\MAKHAZIN.APIs\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Json.dll
+D:\Backend\MAKHAZIN\makhazen\MAKHAZIN.Solution\MAKHAZIN.APIs\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+D:\Backend\MAKHAZIN\makhazen\MAKHAZIN.Solution\MAKHAZIN.APIs\bin\Debug\net8.0\MailKit.dll
+D:\Backend\MAKHAZIN\makhazen\MAKHAZIN.Solution\MAKHAZIN.APIs\bin\Debug\net8.0\MimeKit.dll
+D:\Backend\MAKHAZIN\makhazen\MAKHAZIN.Solution\MAKHAZIN.APIs\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+D:\Backend\MAKHAZIN\makhazen\MAKHAZIN.Solution\MAKHAZIN.APIs\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll

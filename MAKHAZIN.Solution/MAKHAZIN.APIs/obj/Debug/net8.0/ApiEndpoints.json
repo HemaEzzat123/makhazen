@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "MAKHAZIN.APIs.Controllers.AccountsController",
+    "Method": "ForgotPassword",
+    "RelativePath": "api/Accounts/forget-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "MAKHAZIN.Core.Application.Features.Auth.Commands.ForgotPasswordCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MAKHAZIN.APIs.Controllers.AccountsController",
     "Method": "Login",
     "RelativePath": "api/Accounts/Login",
     "HttpMethod": "POST",
@@ -76,6 +92,22 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "MAKHAZIN.APIs.Controllers.AccountsController",
+    "Method": "ResetPassword",
+    "RelativePath": "api/Accounts/reset-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "MAKHAZIN.Core.Application.Features.Auth.Commands.ResetPasswordCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "MAKHAZIN.APIs.Controllers.UsersController",
