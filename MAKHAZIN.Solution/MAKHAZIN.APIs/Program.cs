@@ -40,6 +40,15 @@ namespace MAKHAZIN.APIs
             });
             webApplicationBuilder.Services.AddApplicationServices(webApplicationBuilder.Configuration);
             webApplicationBuilder.Services.AddIdentityServices(webApplicationBuilder.Configuration);
+
+
+            webApplicationBuilder.Services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy", policy =>
+                {
+                    policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:3000");
+                });
+            });
             #endregion
 
             var app = webApplicationBuilder.Build();
@@ -90,7 +99,8 @@ namespace MAKHAZIN.APIs
             app.UseAuthorization();
 
 
-            app.MapControllers(); 
+            app.MapControllers();
+            app.UseCors("CorsPolicy");
             #endregion
 
             app.Run();
