@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MAKHAZIN.Core.Application.Features.User.Query
+namespace MAKHAZIN.Core.Application.Features.Users.Query
 {
     public class GetUserProfileQuery : IQuery<UserProfileDTO>
     {

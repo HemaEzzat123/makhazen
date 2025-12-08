@@ -4,7 +4,8 @@ namespace MAKHAZIN.Core.Application.Features.StockItems.Commands
 {
     public class AddOrUpdateStockItemsCommand : ICommand<int>
     {
-        public int UserId { get; set; }
+        public int? PharmacyId { get; set; }
+        public int? WarehouseId { get; set; }
         public int ProductId { get; set; }
         public int Quantity { get; set; }
         public decimal SellingPrice { get; set; }

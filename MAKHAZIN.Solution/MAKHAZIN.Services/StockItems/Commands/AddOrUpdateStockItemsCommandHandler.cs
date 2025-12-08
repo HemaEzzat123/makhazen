@@ -16,14 +16,27 @@ namespace MAKHAZIN.Services.StockItems.Commands
         public async Task<Result<int>> Handle(AddOrUpdateStockItemsCommand request, CancellationToken cancellationToken)
         {
             var repo = _unitOfWork.Repository<StockItem>();
-            var stockItem = await repo.FindFirstOrDefaultAsync(si => si.ProductId == request.ProductId && si.UserId == request.UserId);
+            StockItem? stockItem = null;
 
+            if (request.PharmacyId.HasValue)
+            {
+                stockItem = await repo.FindFirstOrDefaultAsync(
+                    si => si.ProductId == request.ProductId && si.PharmacyId == request.PharmacyId
+                );
+            }
+            else if (request.WarehouseId.HasValue)
+            {
+                stockItem = await repo.FindFirstOrDefaultAsync(
+                    si => si.ProductId == request.ProductId && si.WarehouseId == request.WarehouseId
+                );
+            }
             if (stockItem == null)
             {
                 stockItem = new StockItem
                 {
                     ProductId = request.ProductId,
-                    UserId = request.UserId,
+                    PharmacyId = request.PharmacyId,
+                    WarehouseId = request.WarehouseId,
                     Quantity = request.Quantity,
                     SellingPrice = request.SellingPrice,
                     Discount = request.Discount,
@@ -38,7 +51,6 @@ namespace MAKHAZIN.Services.StockItems.Commands
                 stockItem.Discount = request.Discount;
                 stockItem.ExpirationDate = request.ExpirationDate;
                 repo.Update(stockItem);
-                await _unitOfWork.CompleteAsync();
             }
             await _unitOfWork.CompleteAsync();
             return Result<int>.Success(stockItem.Id);

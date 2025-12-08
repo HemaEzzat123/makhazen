@@ -1,9 +1,13 @@
 ﻿using MAKHAZIN.APIs.Errors;
 using MAKHAZIN.Core;
+using MAKHAZIN.Core.Application.Features.Orders.Builder;
 using MAKHAZIN.Core.Services.Contract;
 using MAKHAZIN.Repository;
 using MAKHAZIN.Services;
 using MAKHAZIN.Services.Configurations;
+using MAKHAZIN.Services.Helpers;
+using MAKHAZIN.Services.Notifications;
+using MAKHAZIN.Services.Orders.Builder;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MAKHAZIN.APIs.Extensions
@@ -14,6 +18,9 @@ namespace MAKHAZIN.APIs.Extensions
         {
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IEmailService, EmailService>();
+            services.AddScoped<IOrderBuilder, OrderBuilder>();
+            services.AddScoped<INotificationService, NotificationService>();
+            services.AddScoped<IUserHelper, UserHelper>();
             //services.AddAutoMapper(typeof(MappingProfile));
 
             // Bind EmailSettings from configuration

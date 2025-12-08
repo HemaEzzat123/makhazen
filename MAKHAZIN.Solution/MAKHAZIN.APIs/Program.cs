@@ -3,6 +3,7 @@ using MAKHAZIN.APIs.Extensions;
 using MAKHAZIN.APIs.Middlewares;
 using MAKHAZIN.Core.Application.Features.Auth.Commands;
 using MAKHAZIN.Core.Entities.Identity;
+using MAKHAZIN.Core.Hubs.Notifications;
 using MAKHAZIN.Repository.Data;
 using MAKHAZIN.Repository.Identity;
 using MAKHAZIN.Services.Auth.Commands;
@@ -22,6 +23,7 @@ namespace MAKHAZIN.APIs
             webApplicationBuilder.Services.AddControllers();
             webApplicationBuilder.Services.AddEndpointsApiExplorer();
             webApplicationBuilder.Services.AddSwaggerGen();
+            webApplicationBuilder.Services.AddSignalR();
             webApplicationBuilder.Logging.ClearProviders();
             webApplicationBuilder.Logging.AddConsole();
             webApplicationBuilder.Services.AddHttpContextAccessor();
@@ -46,12 +48,15 @@ namespace MAKHAZIN.APIs
             {
                 options.AddPolicy("CorsPolicy", policy =>
                 {
-                    policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:3000");
+                    policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:3000");
                 });
             });
             #endregion
 
             var app = webApplicationBuilder.Build();
+
+            // Hub For Connection of SignalR
+            app.MapHub<NotificationHub>("/hubs/notifications");
 
             #region Update - Database
             using var scope = app.Services.CreateScope();

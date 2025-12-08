@@ -1,6 +1,6 @@
 ﻿using MAKHAZIN.APIs.Errors;
-using MAKHAZIN.Core.Application.Features.User.Command;
-using MAKHAZIN.Core.Application.Features.User.Query;
+using MAKHAZIN.Core.Application.Features.Users.Command;
+using MAKHAZIN.Core.Application.Features.Users.Query;
 using MAKHAZIN.Core.DTOs;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;

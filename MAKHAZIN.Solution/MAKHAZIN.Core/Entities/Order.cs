@@ -12,13 +12,12 @@ namespace MAKHAZIN.Core.Entities
     {
         public int BuyerId { get; set; }
         public int SellerId { get; set; }
-        public DateTime OrderDate { get; set; }
+        public DateTime OrderDate { get; set; } = DateTime.UtcNow;
         public OrderStatus Status { get; set; } // [Enum]
 
         // Navigation
-        public ICollection<OrderItem> OrderItems { get; set; }
+        public ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
         public User Buyer { get; set; }
         public User Seller { get; set; }
     }
-
 }

@@ -14,9 +14,6 @@ namespace MAKHAZIN.Repository.Data.Config
     {
         public void Configure(EntityTypeBuilder<User> builder)
         {
-            builder.HasMany(u => u.StockItems)
-       .WithOne(s => s.User)
-       .HasForeignKey(s => s.UserId);
 
             builder.HasMany(u => u.OrdersPlaced)
                    .WithOne(o => o.Buyer)

@@ -1,5 +1,5 @@
 ﻿using MAKHAZIN.Core.Application.CQRS;
-using MAKHAZIN.Core.Application.Features.User.Query;
+using MAKHAZIN.Core.Application.Features.Users.Query;
 using MAKHAZIN.Core.DTOs;
 using MAKHAZIN.Core.Entities.Identity;
 using Microsoft.AspNetCore.Identity;

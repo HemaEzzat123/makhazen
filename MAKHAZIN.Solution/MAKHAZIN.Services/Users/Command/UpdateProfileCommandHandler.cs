@@ -1,6 +1,6 @@
 ﻿using MAKHAZIN.Core;
 using MAKHAZIN.Core.Application.CQRS;
-using MAKHAZIN.Core.Application.Features.User.Command;
+using MAKHAZIN.Core.Application.Features.Users.Command;
 using MAKHAZIN.Core.DTOs;
 using MAKHAZIN.Core.Entities;
 using MAKHAZIN.Core.Entities.Identity;

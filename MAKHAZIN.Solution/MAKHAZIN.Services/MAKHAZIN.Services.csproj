@@ -16,4 +16,8 @@
     <ProjectReference Include="..\MAKHAZIN.Repository\MAKHAZIN.Repository.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Bids\Query\" />
+  </ItemGroup>
+
 </Project>

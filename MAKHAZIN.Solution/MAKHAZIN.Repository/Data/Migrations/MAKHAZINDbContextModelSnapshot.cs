@@ -184,6 +184,36 @@ namespace MAKHAZIN.Repository.Data.Migrations
                     b.ToTable("OrderItems");
                 });
 
+            modelBuilder.Entity("MAKHAZIN.Core.Entities.Pharmacy", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LicenseNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Pharmacies");
+                });
+
             modelBuilder.Entity("MAKHAZIN.Core.Entities.Product", b =>
                 {
                     b.Property<int>("Id")
@@ -194,6 +224,9 @@ namespace MAKHAZIN.Repository.Data.Migrations
 
                     b.Property<string>("Description")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageUrl")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
@@ -302,6 +335,9 @@ namespace MAKHAZIN.Repository.Data.Migrations
                     b.Property<DateTime?>("ExpirationDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<int?>("PharmacyId")
+                        .HasColumnType("int");
+
                     b.Property<int>("ProductId")
                         .HasColumnType("int");
 
@@ -311,14 +347,21 @@ namespace MAKHAZIN.Repository.Data.Migrations
                     b.Property<decimal>("SellingPrice")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<int>("UserId")
+                    b.Property<int?>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("WarehouseId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
+                    b.HasIndex("PharmacyId");
+
                     b.HasIndex("ProductId");
 
                     b.HasIndex("UserId");
+
+                    b.HasIndex("WarehouseId");
 
                     b.ToTable("StockItems");
                 });
@@ -351,6 +394,32 @@ namespace MAKHAZIN.Repository.Data.Migrations
                         .IsUnique();
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("MAKHAZIN.Core.Entities.Warehouse", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ManagerName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Warehouses");
                 });
 
             modelBuilder.Entity("MAKHAZIN.Core.Entities.Auction", b =>
@@ -440,6 +509,17 @@ namespace MAKHAZIN.Repository.Data.Migrations
                     b.Navigation("Product");
                 });
 
+            modelBuilder.Entity("MAKHAZIN.Core.Entities.Pharmacy", b =>
+                {
+                    b.HasOne("MAKHAZIN.Core.Entities.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("MAKHAZIN.Core.Entities.Rating", b =>
                 {
                     b.HasOne("MAKHAZIN.Core.Entities.User", "Ratee")
@@ -472,19 +552,40 @@ namespace MAKHAZIN.Repository.Data.Migrations
 
             modelBuilder.Entity("MAKHAZIN.Core.Entities.StockItem", b =>
                 {
+                    b.HasOne("MAKHAZIN.Core.Entities.Pharmacy", "Pharmacy")
+                        .WithMany("StockItems")
+                        .HasForeignKey("PharmacyId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
                     b.HasOne("MAKHAZIN.Core.Entities.Product", "Product")
                         .WithMany("StockItems")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("MAKHAZIN.Core.Entities.User", "User")
+                    b.HasOne("MAKHAZIN.Core.Entities.User", null)
                         .WithMany("StockItems")
+                        .HasForeignKey("UserId");
+
+                    b.HasOne("MAKHAZIN.Core.Entities.Warehouse", "Warehouse")
+                        .WithMany("StockItems")
+                        .HasForeignKey("WarehouseId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.Navigation("Pharmacy");
+
+                    b.Navigation("Product");
+
+                    b.Navigation("Warehouse");
+                });
+
+            modelBuilder.Entity("MAKHAZIN.Core.Entities.Warehouse", b =>
+                {
+                    b.HasOne("MAKHAZIN.Core.Entities.User", "User")
+                        .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Product");
 
                     b.Navigation("User");
                 });
@@ -497,6 +598,11 @@ namespace MAKHAZIN.Repository.Data.Migrations
             modelBuilder.Entity("MAKHAZIN.Core.Entities.Order", b =>
                 {
                     b.Navigation("OrderItems");
+                });
+
+            modelBuilder.Entity("MAKHAZIN.Core.Entities.Pharmacy", b =>
+                {
+                    b.Navigation("StockItems");
                 });
 
             modelBuilder.Entity("MAKHAZIN.Core.Entities.Product", b =>
@@ -526,6 +632,11 @@ namespace MAKHAZIN.Repository.Data.Migrations
 
                     b.Navigation("ReportRequests");
 
+                    b.Navigation("StockItems");
+                });
+
+            modelBuilder.Entity("MAKHAZIN.Core.Entities.Warehouse", b =>
+                {
                     b.Navigation("StockItems");
                 });
 #pragma warning restore 612, 618

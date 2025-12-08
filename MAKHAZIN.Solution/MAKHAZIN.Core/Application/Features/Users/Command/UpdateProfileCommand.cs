@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MAKHAZIN.Core.Application.Features.User.Command
+namespace MAKHAZIN.Core.Application.Features.Users.Command
 {
     public class UpdateProfileCommand : ICommand<UserToReturnDTO>
     {

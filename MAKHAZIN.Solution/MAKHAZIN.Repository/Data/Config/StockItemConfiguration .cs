@@ -16,6 +16,17 @@ namespace MAKHAZIN.Repository.Data.Config
             builder.Property(s => s.Quantity).IsRequired();
             builder.Property(s => s.SellingPrice).HasColumnType("decimal(18,2)");
             builder.Property(s => s.Discount).HasDefaultValue(0);
+
+            // Warehouse and Pharmacy relationships
+            builder.HasOne(s => s.Warehouse)
+                   .WithMany(w => w.StockItems)
+                   .HasForeignKey(s => s.WarehouseId)
+                   .OnDelete(DeleteBehavior.Restrict);
+
+            builder.HasOne(s => s.Pharmacy)
+                   .WithMany(p => p.StockItems)
+                   .HasForeignKey(s => s.PharmacyId)
+                   .OnDelete(DeleteBehavior.Restrict);
         }
     }
 

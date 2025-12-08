@@ -23,7 +23,7 @@ namespace MAKHAZIN.Repository
         public async Task<T?> GetByIdAsync(int id)
             => await _context.Set<T>().FindAsync(id);
 
-        public async Task<IEnumerable<T>> GetAllAsync()
+        public async Task<IReadOnlyList<T>> GetAllAsync()
             => await _context.Set<T>().ToListAsync();
 
 
@@ -35,8 +35,11 @@ namespace MAKHAZIN.Repository
             => _context.Set<T>().Update(entity);
         public void Delete(T entity)
             => _context.Set<T>().Remove(entity);
-
-        public async Task<IEnumerable<T>> FindAsync(Expression<Func<T, bool>> predicate)
+        public async Task<int> CountAsync(ISpecifications<T> spec)
+        {
+            return await ApplySpecification(spec).CountAsync();
+        }
+        public async Task<IReadOnlyList<T>> FindAsync(Expression<Func<T, bool>> predicate)
         {
             return await _context.Set<T>().Where(predicate).ToListAsync();
         }
@@ -47,7 +50,7 @@ namespace MAKHAZIN.Repository
 
         public async Task<T?> GetByIdWithSpecAsync(ISpecifications<T> spec)
         {
-            return await ApplySpecification(spec).FirstOrDefaultAsync();
+            return await ApplySpecification(spec).AsNoTracking().FirstOrDefaultAsync();
         }
 
         public async Task<IReadOnlyList<T>> GetAllWithSpecAsync(ISpecifications<T> spec)

@@ -12,8 +12,9 @@ namespace MAKHAZIN.Core.Repository.Contract
     public interface IGenericRepository<T> where T : BaseEntity
     {
         Task<T?> GetByIdAsync(int id);
-        Task<IEnumerable<T>> GetAllAsync();
-        Task<IEnumerable<T>> FindAsync(Expression<Func<T, bool>> predicate);
+        Task<IReadOnlyList<T>> GetAllAsync();
+        public Task<int> CountAsync(ISpecifications<T> spec);
+        Task<IReadOnlyList<T>> FindAsync(Expression<Func<T, bool>> predicate);
         public Task<T?> FindFirstOrDefaultAsync(Expression<Func<T, bool>> predicate);
         public Task<T?> GetByIdWithSpecAsync(ISpecifications<T> spec);
         public Task<IReadOnlyList<T>> GetAllWithSpecAsync(ISpecifications<T> spec);

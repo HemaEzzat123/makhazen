@@ -43,6 +43,8 @@ namespace MAKHAZIN.Repository.Data
         public DbSet<Rating> Ratings { get; set; }
         public DbSet<Notification> Notifications { get; set; }
         public DbSet<ReportRequest> ReportRequests { get; set; }
+        public DbSet<Warehouse> Warehouses { get; set; }
+        public DbSet<Pharmacy> Pharmacies { get; set; }
         #endregion
     }
 }
