@@ -1,4 +1,4 @@
-﻿using MAKHAZIN.Core.Enums;
+using MAKHAZIN.Core.Enums;
 using Microsoft.AspNetCore.Identity;
 
 namespace MAKHAZIN.APIs.Extensions

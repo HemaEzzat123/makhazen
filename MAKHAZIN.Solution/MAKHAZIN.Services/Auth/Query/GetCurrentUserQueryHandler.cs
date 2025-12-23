@@ -1,5 +1,5 @@
-﻿using MAKHAZIN.Core.Application.CQRS;
-using MAKHAZIN.Core.Application.Features.Auth.Query;
+using MAKHAZIN.Application.CQRS;
+using MAKHAZIN.Application.Features.Auth.Query;
 using MAKHAZIN.Core.DTOs;
 using MAKHAZIN.Core.Entities.Identity;
 using MAKHAZIN.Core.Services.Contract;

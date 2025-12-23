@@ -1,4 +1,4 @@
-﻿using MAKHAZIN.Core.Entities.Identity;
+using MAKHAZIN.Core.Entities.Identity;
 using MAKHAZIN.Core.Services.Contract;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;

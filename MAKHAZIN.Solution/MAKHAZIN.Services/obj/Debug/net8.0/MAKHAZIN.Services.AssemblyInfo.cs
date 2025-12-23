@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MAKHAZIN.Services")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e59b0b745849074153f6c3ffb180f317ef6cbf6d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+391f38ba060b4f75d2735e192209938ead9ff546")]
 [assembly: System.Reflection.AssemblyProductAttribute("MAKHAZIN.Services")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MAKHAZIN.Services")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

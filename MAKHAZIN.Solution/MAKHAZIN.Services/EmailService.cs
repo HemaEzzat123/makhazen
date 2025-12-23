@@ -1,4 +1,4 @@
-﻿using MailKit.Net.Smtp;
+using MailKit.Net.Smtp;
 using MAKHAZIN.Core.Services.Contract;
 using MAKHAZIN.Services.Configurations;
 using Microsoft.Extensions.Options;

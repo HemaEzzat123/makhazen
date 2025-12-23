@@ -1,5 +1,5 @@
-﻿using MAKHAZIN.Core.Application.CQRS;
-using MAKHAZIN.Core.Application.Features.Auth.Commands;
+using MAKHAZIN.Application.CQRS;
+using MAKHAZIN.Application.Features.Auth.Commands;
 using MAKHAZIN.Core.Entities.Identity;
 using MAKHAZIN.Core.Enums;
 using MAKHAZIN.Core.Services.Contract;

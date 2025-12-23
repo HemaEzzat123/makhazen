@@ -1,4 +1,4 @@
-﻿using MAKHAZIN.APIs.Errors;
+using MAKHAZIN.APIs.Errors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 

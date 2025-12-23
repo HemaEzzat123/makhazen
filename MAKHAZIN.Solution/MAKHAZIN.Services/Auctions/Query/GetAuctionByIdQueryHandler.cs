@@ -1,6 +1,6 @@
-﻿using MAKHAZIN.Core;
-using MAKHAZIN.Core.Application.CQRS;
-using MAKHAZIN.Core.Application.Features.Auctions.Query;
+using MAKHAZIN.Core;
+using MAKHAZIN.Application.CQRS;
+using MAKHAZIN.Application.Features.Auctions.Query;
 using MAKHAZIN.Core.DTOs;
 using MAKHAZIN.Core.Entities;
 using MAKHAZIN.Core.Enums;
@@ -28,16 +28,16 @@ namespace MAKHAZIN.Services.Auctions.Query
             var auctionDto = new AuctionDTO
             {
                 Id = auction.Id,
-                CreatedBy = auction.User != null ? auction.User.Name : "UnKnown",
+                CreatedBy = auction.User?.Name ?? "Unknown",
                 ExpirationTime = auction.ExpirationTime,
-                ProductName = auction.Product.Name,
+                ProductName = auction.Product?.Name ?? "Unknown Product",
                 Quantity = auction.Quantity,
                 StartingPrice = auction.StartingPrice,
-                Bids = auction.Bids.Select(b => new BidDTO
+                Bids = (auction.Bids ?? new List<Bid>()).Select(b => new BidDTO
                 {
                     Id = b.Id,
                     AuctionId = b.AuctionId,
-                    BidderName = b.User != null ? b.User.Name : "UnKnown",
+                    BidderName = b.User?.Name ?? "Unknown",
                     BidPrice = b.BidPrice,
                     TimeStamp = b.Timestamp
                 }).ToList(),

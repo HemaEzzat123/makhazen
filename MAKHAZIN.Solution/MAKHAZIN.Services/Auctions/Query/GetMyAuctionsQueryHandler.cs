@@ -1,9 +1,9 @@
 using MAKHAZIN.Core;
-using MAKHAZIN.Core.Application.CQRS;
-using MAKHAZIN.Core.Application.Features.Auctions.Query;
+using MAKHAZIN.Application.CQRS;
+using MAKHAZIN.Application.Features.Auctions.Query;
 using MAKHAZIN.Core.DTOs;
 using MAKHAZIN.Core.Entities;
-using Microsoft.EntityFrameworkCore;
+using MAKHAZIN.Core.Sepecification;
 
 namespace MAKHAZIN.Services.Auctions.Query
 {
@@ -18,32 +18,34 @@ namespace MAKHAZIN.Services.Auctions.Query
 
         public async Task<Result<Pagination<AuctionDTO>>> Handle(GetMyAuctionsQuery request, CancellationToken cancellationToken)
         {
-            var auctions = await _unitOfWork.Repository<Auction>().GetAllAsync();
-            auctions = auctions.Where(a => a.UserId == request.UserId).ToList();
+            // Create specification with user filter and includes
+            var spec = new AuctionsByUserSpecification(request.UserId, request.PageIndex, request.PageSize);
 
-            // Get total count
-            var totalItems = auctions.Count;
+            // Create count specification
+            var countSpec = new AuctionsByUserCountSpecification(request.UserId);
 
-            // Apply pagination
-            auctions = auctions
-                .OrderByDescending(a => a.Id)
-                .Skip((request.PageIndex - 1) * request.PageSize)
-                .Take(request.PageSize)
-                .ToList();
+            // Get total count for pagination
+            var totalItems = await _unitOfWork.Repository<Auction>().CountAsync(countSpec);
 
+            // Get paginated auctions with navigation properties
+            var auctions = await _unitOfWork.Repository<Auction>().GetAllWithSpecAsync(spec);
+
+            // Map to DTOs
             var data = auctions.Select(a => new AuctionDTO
             {
                 Id = a.Id,
-                ProductName = a.Product.Name,
+                ProductName = a.Product?.Name ?? "Unknown Product",
                 StartingPrice = a.StartingPrice,
                 Quantity = a.Quantity,
                 ExpirationTime = a.ExpirationTime,
-                CreatedBy = a.User.Name,
-                Bids = a.Bids.Select(b => new BidDTO
+                CreatedBy = a.User?.Name ?? "Unknown User",
+                Bids = (a.Bids ?? new List<Bid>()).Select(b => new BidDTO
                 {
                     Id = b.Id,
+                    AuctionId = b.AuctionId,
                     BidPrice = b.BidPrice,
-                    TimeStamp = b.Timestamp
+                    TimeStamp = b.Timestamp,
+                    BidderName = b.User?.Name ?? "Unknown"
                 }).ToList()
             }).ToList();
 

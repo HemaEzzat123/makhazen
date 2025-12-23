@@ -1,6 +1,6 @@
-﻿using MAKHAZIN.Core;
-using MAKHAZIN.Core.Application.CQRS;
-using MAKHAZIN.Core.Application.Features.Orders.Queries;
+using MAKHAZIN.Core;
+using MAKHAZIN.Application.CQRS;
+using MAKHAZIN.Application.Features.Orders.Queries;
 using MAKHAZIN.Core.DTOs;
 using MAKHAZIN.Core.Entities;
 using MAKHAZIN.Core.Enums;

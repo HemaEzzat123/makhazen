@@ -1,6 +1,6 @@
-﻿using MAKHAZIN.Core;
-using MAKHAZIN.Core.Application.CQRS;
-using MAKHAZIN.Core.Application.Features.StockItems.Commands;
+using MAKHAZIN.Core;
+using MAKHAZIN.Application.CQRS;
+using MAKHAZIN.Application.Features.StockItems.Commands;
 using MAKHAZIN.Core.Entities;
 
 namespace MAKHAZIN.Services.StockItems.Commands

@@ -19,8 +19,11 @@ namespace MAKHAZIN.Repository
             if (spec.OrderByDescending != null)
                 query = query.OrderByDescending(spec.OrderByDescending);
 
-            // Include related entities
+            // Include related entities (expression-based)
             query = spec.Includes.Aggregate(query, (currentQuery, includeExpression) => currentQuery.Include(includeExpression));
+
+            // Include related entities (string-based for nested includes like "Bids.User")
+            query = spec.IncludeStrings.Aggregate(query, (currentQuery, includeString) => currentQuery.Include(includeString));
 
             // Apply pagination
             if (spec.IsPaginationEnabled)
@@ -30,3 +33,4 @@ namespace MAKHAZIN.Repository
         }
     }
 }
+

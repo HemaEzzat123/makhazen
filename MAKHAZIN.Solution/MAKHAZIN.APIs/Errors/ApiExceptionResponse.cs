@@ -1,4 +1,4 @@
-﻿namespace MAKHAZIN.APIs.Errors
+namespace MAKHAZIN.APIs.Errors
 {
     public class ApiExceptionResponse : ApiResponse
     {

@@ -7,6 +7,7 @@ namespace MAKHAZIN.Core.Sepecification
     {
         public Expression<Func<T, bool>>? Criteria { get; set; }
         public List<Expression<Func<T, object>>> Includes { get; set; } = new List<Expression<Func<T, object>>>();
+        public List<string> IncludeStrings { get; set; } = new List<string>();
         public Expression<Func<T, object>> OrderBy { get; set; }
         public Expression<Func<T, object>> OrderByDescending { get; set; }
         public int Skip { get; set; }
@@ -34,6 +35,14 @@ namespace MAKHAZIN.Core.Sepecification
             Skip = skip;
             Take = take;
             IsPaginationEnabled = true;
+        }
+        
+        /// <summary>
+        /// Add a string-based include for nested navigation properties (e.g., "Bids.User")
+        /// </summary>
+        protected void AddInclude(string includeString)
+        {
+            IncludeStrings.Add(includeString);
         }
     }
 }

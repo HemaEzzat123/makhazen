@@ -1,4 +1,4 @@
-﻿using System.Security.Claims;
+using System.Security.Claims;
 using MAKHAZIN.Core.Entities;
 using MAKHAZIN.Core;
 

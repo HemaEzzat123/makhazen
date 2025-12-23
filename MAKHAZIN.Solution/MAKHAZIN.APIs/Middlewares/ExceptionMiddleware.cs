@@ -1,4 +1,4 @@
-﻿using MAKHAZIN.APIs.Errors;
+using MAKHAZIN.APIs.Errors;
 using System.Net;
 using System.Text.Json;
 
@@ -29,8 +29,11 @@ namespace MAKHAZIN.APIs.Middlewares
             }
             catch (Exception ex)
             {
-
-                _logger.LogError(ex.Message);
+                var requestPath = httpContext.Request.Path;
+                var requestMethod = httpContext.Request.Method;
+                
+                _logger.LogError(ex, "Unhandled exception occurred while processing {Method} {Path}", 
+                    requestMethod, requestPath);
 
                 httpContext.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
                 httpContext.Response.ContentType = "application/json";

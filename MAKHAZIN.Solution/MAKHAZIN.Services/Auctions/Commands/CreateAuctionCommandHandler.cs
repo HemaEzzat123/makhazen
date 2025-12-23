@@ -1,6 +1,6 @@
-﻿using MAKHAZIN.Core;
-using MAKHAZIN.Core.Application.CQRS;
-using MAKHAZIN.Core.Application.Features.Auctions.Commands;
+using MAKHAZIN.Core;
+using MAKHAZIN.Application.CQRS;
+using MAKHAZIN.Application.Features.Auctions.Commands;
 using MAKHAZIN.Core.DTOs;
 using MAKHAZIN.Core.Entities;
 using System;

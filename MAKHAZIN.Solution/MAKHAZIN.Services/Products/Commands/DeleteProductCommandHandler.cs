@@ -1,6 +1,6 @@
 using MAKHAZIN.Core;
-using MAKHAZIN.Core.Application.CQRS;
-using MAKHAZIN.Core.Application.Features.Products.Commands;
+using MAKHAZIN.Application.CQRS;
+using MAKHAZIN.Application.Features.Products.Commands;
 using MAKHAZIN.Core.Entities;
 
 namespace MAKHAZIN.Services.Products.Commands

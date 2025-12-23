@@ -10,6 +10,7 @@ namespace MAKHAZIN.Core.Sepecification
             Includes.Add(a => a.Bids);
             Includes.Add(a => a.User);
             Includes.Add(a => a.Product);
+            AddInclude("Bids.User"); // Include User for each Bid
         }
     }
 }

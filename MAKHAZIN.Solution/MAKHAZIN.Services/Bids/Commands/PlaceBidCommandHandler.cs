@@ -1,6 +1,6 @@
-﻿using MAKHAZIN.Core;
-using MAKHAZIN.Core.Application.CQRS;
-using MAKHAZIN.Core.Application.Features.Bids.Commands;
+using MAKHAZIN.Core;
+using MAKHAZIN.Application.CQRS;
+using MAKHAZIN.Application.Features.Bids.Commands;
 using MAKHAZIN.Core.DTOs;
 using MAKHAZIN.Core.Entities;
 using MAKHAZIN.Core.Enums;
@@ -28,6 +28,10 @@ namespace MAKHAZIN.Services.Bids.Commands
 
             if (auction == null)
                 return Result<BidDTO>.Failure("Auction not found");
+
+            // Prevent auction owner from bidding on their own auction
+            if (auction.UserId == request.UserId)
+                return Result<BidDTO>.Failure("You cannot bid on your own auction");
 
             if (auction.ExpirationTime < DateTime.UtcNow)
                 return Result<BidDTO>.Failure("Auction has expired");

@@ -1,7 +1,7 @@
-﻿using MAKHAZIN.Core;
-using MAKHAZIN.Core.Application.CQRS;
-using MAKHAZIN.Core.Application.Features.Orders.Builder;
-using MAKHAZIN.Core.Application.Features.Orders.Command;
+using MAKHAZIN.Core;
+using MAKHAZIN.Application.CQRS;
+using MAKHAZIN.Application.Features.Orders.Builder;
+using MAKHAZIN.Application.Features.Orders.Command;
 using MAKHAZIN.Core.DTOs;
 using MAKHAZIN.Core.Entities;
 

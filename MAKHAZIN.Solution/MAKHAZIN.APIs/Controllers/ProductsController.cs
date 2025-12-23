@@ -1,6 +1,6 @@
 using MAKHAZIN.APIs.Errors;
-using MAKHAZIN.Core.Application.Features.Products.Commands;
-using MAKHAZIN.Core.Application.Features.Products.Query;
+using MAKHAZIN.Application.Features.Products.Commands;
+using MAKHAZIN.Application.Features.Products.Query;
 using MAKHAZIN.Core.DTOs;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
@@ -12,6 +12,7 @@ namespace MAKHAZIN.APIs.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class ProductsController : ControllerBase
     {
         private readonly IMediator _mediator;
@@ -29,7 +30,6 @@ namespace MAKHAZIN.APIs.Controllers
         /// <param name="pageIndex">Page number (default: 1)</param>
         /// <returns>Paginated list of products</returns>
         [HttpGet]
-        [AllowAnonymous]
         public async Task<ActionResult<Pagination<ProductDTO>>> GetProducts(
             [FromQuery] string? search,
             [FromQuery] int pageSize = 10,
@@ -56,7 +56,6 @@ namespace MAKHAZIN.APIs.Controllers
         /// <param name="id">Product ID</param>
         /// <returns>Product details</returns>
         [HttpGet("{id}")]
-        [AllowAnonymous]
         public async Task<ActionResult<ProductDTO>> GetProductById(int id)
         {
             var query = new GetProductByIdQuery(id);

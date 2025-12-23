@@ -1,14 +1,5 @@
-
 using MAKHAZIN.APIs.Extensions;
-using MAKHAZIN.APIs.Middlewares;
-using MAKHAZIN.Core.Application.Features.Auth.Commands;
-using MAKHAZIN.Core.Entities.Identity;
-using MAKHAZIN.Core.Hubs.Notifications;
-using MAKHAZIN.Repository.Data;
-using MAKHAZIN.Repository.Identity;
-using MAKHAZIN.Services.Auth.Commands;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
+using Serilog;
 
 namespace MAKHAZIN.APIs
 {
@@ -16,99 +7,51 @@ namespace MAKHAZIN.APIs
     {
         public static async Task Main(string[] args)
         {
-            var webApplicationBuilder = WebApplication.CreateBuilder(args);
-
-            #region Configure Services
-
-            webApplicationBuilder.Services.AddControllers();
-            webApplicationBuilder.Services.AddEndpointsApiExplorer();
-            webApplicationBuilder.Services.AddSwaggerGen();
-            webApplicationBuilder.Services.AddSignalR();
-            webApplicationBuilder.Logging.ClearProviders();
-            webApplicationBuilder.Logging.AddConsole();
-            webApplicationBuilder.Services.AddHttpContextAccessor();
-
-            webApplicationBuilder.Services.AddDbContext<MAKHAZINDbContext>(options =>
-            {
-                options.UseSqlServer(webApplicationBuilder.Configuration.GetConnectionString("DefaultConnection"));
-            });
-            webApplicationBuilder.Services.AddDbContext<MAKHAZINIdentityDbContext>(options =>
-            {
-                options.UseSqlServer(webApplicationBuilder.Configuration.GetConnectionString("IdentityConnection"));
-            });
-            webApplicationBuilder.Services.AddMediatR(cfg =>
-            {
-                cfg.RegisterServicesFromAssemblyContaining<RegisterCommandHandler>();
-            });
-            webApplicationBuilder.Services.AddApplicationServices(webApplicationBuilder.Configuration);
-            webApplicationBuilder.Services.AddIdentityServices(webApplicationBuilder.Configuration);
-
-
-            webApplicationBuilder.Services.AddCors(options =>
-            {
-                options.AddPolicy("CorsPolicy", policy =>
-                {
-                    policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:3000");
-                });
-            });
-            #endregion
-
-            var app = webApplicationBuilder.Build();
-
-            // Hub For Connection of SignalR
-            app.MapHub<NotificationHub>("/hubs/notifications");
-
-            #region Update - Database
-            using var scope = app.Services.CreateScope();
-
-            var services = scope.ServiceProvider;
-
-            var _dbContext = services.GetRequiredService<MAKHAZINDbContext>(); // ASK CLR for creating object from DbContext [Explicitly]
-            var _identityDbContext = services.GetRequiredService<MAKHAZINIdentityDbContext>(); // ASK CLR for creating object from AppIdentityDbContext [Explicitly]
-
-            var LoggerFactory = services.GetRequiredService<ILoggerFactory>();
-
+            // Configure Serilog
+            SerilogExtensions.ConfigureSerilog();
 
             try
             {
-                await _dbContext.Database.MigrateAsync(); // Update-Database
-                await _identityDbContext.Database.MigrateAsync(); // Update-IdentityDatabase
-                var userManger = services.GetRequiredService<UserManager<AppUser>>();
-                await MAKHAZINIdentityDbContextSeed.SeedAsync(userManger, _dbContext);
+                Log.Information("Starting MAKHAZIN API application");
+
+                var builder = WebApplication.CreateBuilder(args);
+                builder.Host.UseSerilog();
+
+                // Add services
+                builder.Services.AddControllers();
+                builder.Services.ConfigureApiValidation(builder.Environment);
+                builder.Services.AddEndpointsApiExplorer();
+                builder.Services.AddSwaggerGen();
+                builder.Services.AddSignalR();
+                builder.Services.AddHttpContextAccessor();
+
+                builder.Services.AddDatabaseContexts(builder.Configuration);
+                builder.Services.AddMediatRWithBehaviors();
+                builder.Services.AddApplicationServices(builder.Configuration);
+                builder.Services.AddIdentityServices(builder.Configuration);
+                builder.Services.AddCorsPolicy(new[] { "http://localhost:3000" });
+
+                var app = builder.Build();
+
+                // Apply migrations and seed data
+                Log.Information("Applying database migrations...");
+                await app.ApplyMigrationsAndSeedAsync();
+                Log.Information("Database migrations and seeding completed");
+
+                // Configure middleware pipeline
+                app.UseApplicationMiddleware();
+
+                Log.Information("MAKHAZIN API application started successfully");
+                app.Run();
             }
             catch (Exception ex)
             {
-                var logger = LoggerFactory.CreateLogger<Program>();
-                logger.LogError(ex, "Error occured during the migration of the Database");
+                Log.Fatal(ex, "Application terminated unexpectedly");
             }
-            #endregion
-            #region Seeding Roles
-
-            await SeedRoles.SeedRoleAsync(services);
-
-            #endregion
-            #region Configure Middlewares
-            app.UseMiddleware<ExceptionMiddleware>();
-            if (app.Environment.IsDevelopment())
+            finally
             {
-                app.UseSwagger();
-                app.UseSwaggerUI();
+                Log.CloseAndFlush();
             }
-
-            app.UseStatusCodePagesWithReExecute("/errors/{0}");
-
-            app.UseHttpsRedirection();
-            app.UseStaticFiles();
-
-            app.UseAuthentication();
-            app.UseAuthorization();
-
-
-            app.MapControllers();
-            app.UseCors("CorsPolicy");
-            #endregion
-
-            app.Run();
         }
     }
 }
